@@ -1,0 +1,22 @@
+{
+  "name": "0x03-es6_data_manipulation",
+  "version": "1.0.0",
+  "description": "ES6 data manipulation project",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint .",
+    "full-test": "npm run lint && npm run test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.5.1",
+    "jest": "^24.9.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
