@@ -3,3 +3,4 @@ function displayMessage(str) {
   }
   
   module.exports = displayMessage;
+  displayMessage('Hello, ALX!'); 
