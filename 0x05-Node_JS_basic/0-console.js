@@ -1,6 +1,4 @@
-function displayMessage(str) {
-    console.log(str);
-  }
-  
-  module.exports = displayMessage;
-  displayMessage('Hello, ALX!'); 
+function displayMessage(message){
+  console.log(message);
+}
+module.exports = displayMessage;
