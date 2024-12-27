@@ -1,18 +1,23 @@
 function calculateNumber(type, a, b) {
-    if (typeof (type) == String || type == 'SUM' || type == 'SUBTRACT' || type == 'DIVIDE') {
-        if (type == 'SUM') {
-            return Math.round(a) + Math.round(b);
-        } else if (type == 'SUBTRACT') {
-            return Math.round(a) - Math.round(b);
-        } else if (type == 'DIVIDE') {
-            if (Math.round(b) != 0) {
-                return Math.round(a) / Math.round(b);
-            }
-            return 'Error';
-        }
-    } else {
-        return 'Error'
+    if (typeof type !== 'string' || !['SUM', 'SUBTRACT', 'DIVIDE'].includes(type)) {
+        return 'Error';
     }
+
+    const roundedA = Math.round(a);
+    const roundedB = Math.round(b);
+
+    if (type === 'SUM') {
+        return roundedA + roundedB;
+    } else if (type === 'SUBTRACT') {
+        return roundedA - roundedB;
+    } else if (type === 'DIVIDE') {
+        if (roundedB === 0) {
+            return 'Error'; // Avoid division by zero
+        }
+        return roundedA / roundedB;
+    }
+
+    return 'Error'; // Fallback for unexpected cases
 }
 
 module.exports = calculateNumber;
