@@ -31,5 +31,8 @@
     "bugs": {
         "url": "https://github.com/dennisnderitu254/alx-backend-javascript/issues"
     },
-    "homepage": "https://github.com/dennisnderitu254/alx-backend-javascript#readme"
+    "homepage": "https://github.com/dennisnderitu254/alx-backend-javascript#readme",
+    "dependencies": {
+        "express": "^4.21.2"
+    }
 }
