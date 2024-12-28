@@ -3,39 +3,19 @@ const { it, describe } = require('mocha');
 const calculateNumber = require('./0-calcul');
 
 describe('calculateNumber', () => {
-    describe('SUM', () => {
-        it('should round and sum positive numbers', () => {
-            assert.strictEqual(calculateNumber('SUM', 1.4, 3.6), 5);
-        });
-
-        it('should round and sum with negative numbers', () => {
-            assert.strictEqual(calculateNumber('SUM', -1.4, -3.6), -5);
-        });
+    it('should round and sum 1 and 3 to return 4', () => {
+        assert.strictEqual(calculateNumber(1, 3), 4);
     });
 
-    describe('SUBTRACT', () => {
-        it('should round and subtract numbers', () => {
-            assert.strictEqual(calculateNumber('SUBTRACT', 5.4, 3.2), 2);
-        });
-
-        it('should handle negative numbers for subtraction', () => {
-            assert.strictEqual(calculateNumber('SUBTRACT', -5.4, -3.2), -2);
-        });
+    it('should round and sum 1 and 3.7 to return 5', () => {
+        assert.strictEqual(calculateNumber(1, 3.7), 5);
     });
 
-    describe('DIVIDE', () => {
-        it('should round and divide numbers', () => {
-            assert.strictEqual(calculateNumber('DIVIDE', 8.4, 2.2), 4);
-        });
-
-        it('should return "Error" for division by zero', () => {
-            assert.strictEqual(calculateNumber('DIVIDE', 8.4, 0), 'Error');
-        });
+    it('should round and sum 1.2 and 3.7 to return 5', () => {
+        assert.strictEqual(calculateNumber(1.2, 3.7), 5);
     });
 
-    describe('Invalid Type', () => {
-        it('should return "Error" for invalid operation type', () => {
-            assert.strictEqual(calculateNumber('MULTIPLY', 2.2, 3.3), 'Error');
-        });
+    it('should round and sum 1.5 and 3.7 to return 6', () => {
+        assert.strictEqual(calculateNumber(1.5, 3.7), 6);
     });
 });
