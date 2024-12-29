@@ -1,36 +1,21 @@
 {
-    "name": "0x06-unittests_in_js",
+    "name": "8-api",
     "version": "1.0.0",
-    "description": "unit tests in js introduction ",
-    "main": "0-calcul.js",
+    "description": "",
+    "main": "index.js",
     "scripts": {
-        "test": "mocha"
+        "test": "./node_modules/mocha/bin/mocha"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/dennisnderitu254/alx-backend-javascript"
-    },
-    "keywords": [
-        "unittest",
-        "nodejs",
-        "es6",
-        "express",
-        "mocha"
-    ],
-    "author": "dennisnderitu254",
+    "author": "",
     "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1"
+    },
     "devDependencies": {
-        "chai": "^4.5.0",
-        "chai-http": "^5.1.1",
-        "eslint": "^8.7.0",
-        "eslint-config-airbnb-base": "^15.0.0",
-        "eslint-plugin-import": "^2.25.4",
-        "eslint-plugin-mocha": "^10.0.3",
-        "mocha": "^11.0.1",
-        "sinon": "^12.0.1"
-    },
-    "bugs": {
-        "url": "https://github.com/dennisnderitu254/alx-backend-javascript/issues"
-    },
-    "homepage": "https://github.com/dennisnderitu254/alx-backend-javascript#readme"
+        "chai": "^4.2.0",
+        "chai-http": "^4.3.0",
+        "mocha": "^6.2.3",
+        "request": "^2.88.0",
+        "sinon": "^7.5.0"
+    }
 }
